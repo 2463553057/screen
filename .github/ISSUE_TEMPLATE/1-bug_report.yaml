@@ -1,0 +1,69 @@
+name: Bug report
+description: Report an issue
+title: "[bug]: "
+labels: bug
+body:
+    - type: textarea
+      id: bug-description
+      attributes:
+          label: Describe the bug
+          description: A clear and concise description of what the bug is.
+          placeholder: Bug description
+      validations:
+          required: true
+
+    - type: textarea
+      id: reproduction
+      attributes:
+          label: How to reproduce
+          description: A step-by-step description of how to reproduce the bug.
+          placeholder: |
+              1. Go to '...'
+              2. Click on '....'
+              3. See error
+      validations:
+          required: true
+
+    - type: dropdown
+      id: browsers
+      attributes:
+          label: Browsers
+          description: Which browsers are you seeing the problem on?
+          multiple: true
+          options:
+              - Chrome
+              - Firefox
+              - Safari
+              - Microsoft Edge
+              - Other (please specify in the description)
+      validations:
+          required: true
+
+    - type: dropdown
+      id: devices
+      attributes:
+          label: Devices
+          description: Which devices are you seeing the problem on?
+          multiple: true
+          options:
+              - Desktop
+              - Tablet
+              - Mobile
+      validations:
+          required: true
+
+    - type: textarea
+      id: screenshot
+      attributes:
+          label: Screenshots
+          description: If applicable, add screenshots to help explain your problem.
+      validations:
+          required: false
+
+    - type: textarea
+      id: additional
+      attributes:
+          label: Additional context
+          description: Any other relevant information about the problem (e.g., OS version, screen sharing settings, etc.).
+      validations:
+          required: false

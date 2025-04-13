@@ -1,0 +1,95 @@
+{
+  "host": {
+    "title": "主持屏幕共享会话",
+    "description": "轻松与他人共享您的屏幕。只需分享下方的房间代码或链接。",
+    "roomCode": "房间代码",
+    "copyCode": "复制代码",
+    "codeDescription": "房间代码已复制到剪贴板",
+    "shareableLink": "可分享链接",
+    "copyLink": "复制链接",
+    "linkDescription": "链接已复制到剪贴板",
+    "or": "或",
+    "generatingCode": "生成代码中...",
+    "generatingLink": "生成链接中...",
+    "currentViewers": "当前观看者",
+    "stopSharing": "停止共享",
+    "backToHome": "返回首页",
+    "sessionEnded": "会话已结束",
+    "sessionEndedDescription": "您的屏幕共享会话已成功结束。",
+    "newViewerConnected": "新观看者已连接",
+    "clickToStartSharing": "点击下方按钮开始屏幕共享。",
+    "startSharing": "开始共享",
+    "sharingError": "屏幕共享错误",
+    "sharingErrorDescription": "无法开始屏幕共享。请确保您已授予权限。",
+    "scanToJoin": "扫描二维码加入此会话",
+    "generating": "生成中",
+    "downloadQR": "下载二维码"
+  },
+  "join": {
+    "title": "加入屏幕共享会话",
+    "description": "输入主持人提供的房间代码以加入他们的屏幕共享会话。",
+    "roomInputLabel": "房间代码",
+    "roomInputPlaceholder": "输入房间代码...",
+    "joinButton": "加入房间",
+    "or": "或",
+    "backToHome": "返回首页",
+    "connecting": "连接中...",
+    "waitingForHost": "已连接！等待主持人共享屏幕...",
+    "connectionError": "连接错误",
+    "connectionErrorDescription": "无法连接到房间。请检查代码并重试。",
+    "leaveRoom": "离开房间"
+  },
+  "home": {
+    "title": "即时屏幕共享",
+    "description": "与任何人共享屏幕的简单方式。无需注册，无需下载，只需即时屏幕共享。",
+    "hostButton": "主持会话",
+    "joinButton": "加入会话",
+    "features": {
+      "title": "特性",
+      "items": [
+        {
+          "title": "简单共享",
+          "description": "只需一个唯一代码即可共享屏幕 - 无需账户。"
+        },
+        {
+          "title": "实时流媒体",
+          "description": "使用 WebRTC 技术的低延迟，高质量屏幕共享。"
+        },
+        {
+          "title": "跨浏览器支持",
+          "description": "适用于所有主要浏览器，无需插件或扩展。"
+        },
+        {
+          "title": "音频支持",
+          "description": "与屏幕一起共享系统音频（Chrome 和 Edge）。"
+        }
+      ]
+    },
+    "howItWorks": {
+      "title": "工作原理",
+      "host": {
+        "title": "对于主持人",
+        "steps": [
+          "点击'主持会话'",
+          "与观看者分享生成的房间代码",
+          "在提示时授予屏幕共享权限",
+          "开始共享您的屏幕"
+        ]
+      },
+      "viewer": {
+        "title": "对于观看者",
+        "steps": [
+          "点击'加入会话'",
+          "输入主持人分享的房间代码",
+          "等待主持人开始共享",
+          "实时查看共享屏幕"
+        ]
+      }
+    }
+  },
+  "navigation": {
+    "host": "主持",
+    "join": "加入",
+    "language": "语言"
+  }
+} 

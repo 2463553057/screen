@@ -1,0 +1,81 @@
+{
+  "app": {
+    "title": "Share Your Cozy Space",
+    "subtitle": "Create a room, share the code, and invite friends to visit your cozy space."
+  },
+  "home": {
+    "title": "Share Your Cozy Space Instantly",
+    "description": "Create a room, share the code, and let friends visit your cozy space in seconds.",
+    "startSharing": "Start Sharing",
+    "startDescription": "Create a room and share your cozy space with others",
+    "createRoom": "Create Room",
+    "joinRoom": "Join Room",
+    "joinDescription": "Enter a room code to visit someone's cozy space",
+    "adBanner": "Experience cross-platform synchronous sharing, making it easier to share your cozy space!",
+    "learnMore": "Learn More",
+    "featuresTitle": "Key Features",
+    "feature1Title": "Instant Screen Sharing",
+    "feature1Desc": "Share your screen directly in your browser without downloading any software",
+    "feature2Title": "Multiple Viewers",
+    "feature2Desc": "Support for multiple people to connect and view your shared content simultaneously",
+    "feature3Title": "High-Definition Quality",
+    "feature3Desc": "High-quality image transmission to ensure the best viewing experience",
+    "feature4Title": "Easy to Use",
+    "feature4Desc": "Simple interface that makes it easy for anyone to use",
+    "quickStart": "Quick Start",
+    "sponsoredContent": "Sponsored Content",
+    "adPlaceholder": "Advertisement",
+    "adDescription": "Explore professional screen sharing solutions to enhance your sharing experience",
+    "testimonials": "Testimonials",
+    "testimonial1": "This tool has made my remote teaching so much easier, and my students can clearly see my demonstrations.",
+    "user1": "Prof. Smith, Remote Educator",
+    "bottomAdText": "Upgrade to Pro version to unlock more advanced features"
+  },
+  "host": {
+    "title": "Your Cozy Space Sharing Room",
+    "description": "Share your room code or link with others to let them visit your cozy space. To share audio as well, ensure you're using Chrome or Edge, and select the option to share a tab.",
+    "roomCode": "Room Code",
+    "copyCode": "Copy Code",
+    "codeDescription": "Room code copied! Share this code with others to let them join your room.",
+    "or": "or",
+    "shareableLink": "Shareable Link",
+    "copyLink": "Copy Link",
+    "linkDescription": "Shareable link copied! Share this link with others to let them join your room directly.",
+    "generatingCode": "Generating room code...",
+    "generatingLink": "Generating link...",
+    "currentViewers": "Current Visitors",
+    "stopSharing": "Stop sharing",
+    "sessionEnded": "Session ended",
+    "sessionEndedDescription": "Your cozy space sharing session has been terminated.",
+    "newViewerConnected": "New visitor connected",
+    "clickToStartSharing": "Click to start sharing your cozy space.",
+    "startSharing": "Start Sharing",
+    "sharingError": "Sharing error",
+    "sharingErrorDescription": "Failed to start sharing your cozy space. Please try again.",
+    "backToHome": "Back to Home"
+  },
+  "join": {
+    "title": "Join a Room",
+    "description": "Enter the room code to join and visit the shared cozy space",
+    "enterRoomCode": "Enter room code",
+    "connecting": "Connecting...",
+    "roomCodeRequired": "Room code required",
+    "roomCodeRequiredDescription": "Please enter a valid room code.",
+    "connected": "Connected!",
+    "waitingForHost": "Waiting for host to share their cozy space...",
+    "disconnected": "Disconnected",
+    "disconnectedDescription": "The session has been ended.",
+    "connectionFailed": "Connection failed",
+    "connectionFailedDescription": "Could not connect to the room. Please check the room code and try again.",
+    "backToHome": "Back to Home"
+  },
+  "theme": {
+    "light": "Light",
+    "dark": "Dark",
+    "system": "System"
+  },
+  "language": {
+    "zh": "中文",
+    "en": "English"
+  }
+} 

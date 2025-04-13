@@ -1,0 +1,49 @@
+<svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="usersGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4facfe" />
+      <stop offset="100%" stop-color="#00f2fe" />
+    </linearGradient>
+  </defs>
+  
+  <!-- 用户1 (主要) -->
+  <circle cx="9" cy="7" r="4" 
+          fill="none" 
+          stroke="url(#usersGradient)" 
+          stroke-width="1.5" 
+          stroke-linecap="round" 
+          stroke-linejoin="round" />
+  
+  <path d="M2 21v-2a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4v2" 
+        fill="none" 
+        stroke="url(#usersGradient)" 
+        stroke-width="1.5" 
+        stroke-linecap="round" 
+        stroke-linejoin="round" />
+  
+  <!-- 用户2 (次要) -->
+  <path d="M16 3.13a4 4 0 0 1 0 7.75" 
+        fill="none" 
+        stroke="url(#usersGradient)" 
+        stroke-width="1.5" 
+        stroke-linecap="round" 
+        stroke-linejoin="round" />
+  
+  <path d="M21 21v-2a4 4 0 0 0-3-3.85" 
+        fill="none" 
+        stroke="url(#usersGradient)" 
+        stroke-width="1.5" 
+        stroke-linecap="round" 
+        stroke-linejoin="round" />
+  
+  <!-- 用户细节 - 科技感装饰 -->
+  <circle cx="9" cy="6" r="0.5" fill="url(#usersGradient)" opacity="0.8" />
+  <circle cx="16" cy="6" r="0.5" fill="url(#usersGradient)" opacity="0.8" />
+  
+  <!-- 连接线 - 表示社交/连接 -->
+  <line x1="12" y1="7" x2="14" y2="7" 
+        stroke="url(#usersGradient)" 
+        stroke-width="0.5" 
+        stroke-linecap="round" 
+        stroke-dasharray="1,1" />
+</svg> 

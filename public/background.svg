@@ -1,0 +1,336 @@
+<svg width="100%" height="100%" viewBox="0 0 1440 800" xmlns="http://www.w3.org/2000/svg">
+  <!-- 定义渐变 -->
+  <defs>
+    <!-- 主背景渐变 -->
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0c1445" />
+      <stop offset="100%" stop-color="#1a2980" />
+    </linearGradient>
+    
+    <!-- 线条渐变 -->
+    <linearGradient id="lineGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#4facfe" stop-opacity="0.2" />
+      <stop offset="100%" stop-color="#00f2fe" stop-opacity="0.1" />
+    </linearGradient>
+    
+    <!-- 点渐变 -->
+    <radialGradient id="dotGradient" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0" />
+    </radialGradient>
+    
+    <!-- 多边形渐变 -->
+    <linearGradient id="polyGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4facfe" stop-opacity="0.3" />
+      <stop offset="100%" stop-color="#00f2fe" stop-opacity="0.1" />
+    </linearGradient>
+
+    <!-- 定义数据流动画 -->
+    <linearGradient id="flowGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#4facfe" stop-opacity="0">
+        <animate attributeName="offset" values="0;1" dur="3s" repeatCount="indefinite" />
+      </stop>
+      <stop offset="50%" stop-color="#00f2fe" stop-opacity="0.6">
+        <animate attributeName="offset" values="0;1" dur="3s" repeatCount="indefinite" />
+      </stop>
+      <stop offset="100%" stop-color="#4facfe" stop-opacity="0">
+        <animate attributeName="offset" values="0;1" dur="3s" repeatCount="indefinite" />
+      </stop>
+    </linearGradient>
+
+    <!-- 定义闪烁滤镜效果 -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="2" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+  
+  <!-- 主背景 -->
+  <rect width="100%" height="100%" fill="url(#bgGradient)" />
+  
+  <!-- 网格背景-加入闪烁动画 -->
+  <g opacity="0.2">
+    <!-- 水平线-错开动画 -->
+    <g>
+      <line x1="0" y1="100" x2="1440" y2="100" stroke="url(#lineGradient)" stroke-width="0.5">
+        <animate attributeName="opacity" values="0.1;0.4;0.1" dur="7s" repeatCount="indefinite" begin="0s" />
+      </line>
+      <line x1="0" y1="200" x2="1440" y2="200" stroke="url(#lineGradient)" stroke-width="0.5">
+        <animate attributeName="opacity" values="0.1;0.4;0.1" dur="7s" repeatCount="indefinite" begin="1s" />
+      </line>
+      <line x1="0" y1="300" x2="1440" y2="300" stroke="url(#lineGradient)" stroke-width="0.5">
+        <animate attributeName="opacity" values="0.1;0.4;0.1" dur="7s" repeatCount="indefinite" begin="2s" />
+      </line>
+      <line x1="0" y1="400" x2="1440" y2="400" stroke="url(#lineGradient)" stroke-width="0.5">
+        <animate attributeName="opacity" values="0.1;0.4;0.1" dur="7s" repeatCount="indefinite" begin="3s" />
+      </line>
+      <line x1="0" y1="500" x2="1440" y2="500" stroke="url(#lineGradient)" stroke-width="0.5">
+        <animate attributeName="opacity" values="0.1;0.4;0.1" dur="7s" repeatCount="indefinite" begin="4s" />
+      </line>
+      <line x1="0" y1="600" x2="1440" y2="600" stroke="url(#lineGradient)" stroke-width="0.5">
+        <animate attributeName="opacity" values="0.1;0.4;0.1" dur="7s" repeatCount="indefinite" begin="5s" />
+      </line>
+      <line x1="0" y1="700" x2="1440" y2="700" stroke="url(#lineGradient)" stroke-width="0.5">
+        <animate attributeName="opacity" values="0.1;0.4;0.1" dur="7s" repeatCount="indefinite" begin="6s" />
+      </line>
+    </g>
+    
+    <!-- 垂直线-错开动画 -->
+    <g>
+      <line x1="100" y1="0" x2="100" y2="800" stroke="url(#lineGradient)" stroke-width="0.5">
+        <animate attributeName="opacity" values="0.1;0.4;0.1" dur="8s" repeatCount="indefinite" begin="0.5s" />
+      </line>
+      <line x1="200" y1="0" x2="200" y2="800" stroke="url(#lineGradient)" stroke-width="0.5">
+        <animate attributeName="opacity" values="0.1;0.4;0.1" dur="8s" repeatCount="indefinite" begin="1s" />
+      </line>
+      <line x1="300" y1="0" x2="300" y2="800" stroke="url(#lineGradient)" stroke-width="0.5">
+        <animate attributeName="opacity" values="0.1;0.4;0.1" dur="8s" repeatCount="indefinite" begin="1.5s" />
+      </line>
+      <line x1="400" y1="0" x2="400" y2="800" stroke="url(#lineGradient)" stroke-width="0.5">
+        <animate attributeName="opacity" values="0.1;0.4;0.1" dur="8s" repeatCount="indefinite" begin="2s" />
+      </line>
+      <line x1="500" y1="0" x2="500" y2="800" stroke="url(#lineGradient)" stroke-width="0.5">
+        <animate attributeName="opacity" values="0.1;0.4;0.1" dur="8s" repeatCount="indefinite" begin="2.5s" />
+      </line>
+      <line x1="600" y1="0" x2="600" y2="800" stroke="url(#lineGradient)" stroke-width="0.5">
+        <animate attributeName="opacity" values="0.1;0.4;0.1" dur="8s" repeatCount="indefinite" begin="3s" />
+      </line>
+      <line x1="700" y1="0" x2="700" y2="800" stroke="url(#lineGradient)" stroke-width="0.5">
+        <animate attributeName="opacity" values="0.1;0.4;0.1" dur="8s" repeatCount="indefinite" begin="3.5s" />
+      </line>
+      <line x1="800" y1="0" x2="800" y2="800" stroke="url(#lineGradient)" stroke-width="0.5">
+        <animate attributeName="opacity" values="0.1;0.4;0.1" dur="8s" repeatCount="indefinite" begin="4s" />
+      </line>
+      <line x1="900" y1="0" x2="900" y2="800" stroke="url(#lineGradient)" stroke-width="0.5">
+        <animate attributeName="opacity" values="0.1;0.4;0.1" dur="8s" repeatCount="indefinite" begin="4.5s" />
+      </line>
+      <line x1="1000" y1="0" x2="1000" y2="800" stroke="url(#lineGradient)" stroke-width="0.5">
+        <animate attributeName="opacity" values="0.1;0.4;0.1" dur="8s" repeatCount="indefinite" begin="5s" />
+      </line>
+      <line x1="1100" y1="0" x2="1100" y2="800" stroke="url(#lineGradient)" stroke-width="0.5">
+        <animate attributeName="opacity" values="0.1;0.4;0.1" dur="8s" repeatCount="indefinite" begin="5.5s" />
+      </line>
+      <line x1="1200" y1="0" x2="1200" y2="800" stroke="url(#lineGradient)" stroke-width="0.5">
+        <animate attributeName="opacity" values="0.1;0.4;0.1" dur="8s" repeatCount="indefinite" begin="6s" />
+      </line>
+      <line x1="1300" y1="0" x2="1300" y2="800" stroke="url(#lineGradient)" stroke-width="0.5">
+        <animate attributeName="opacity" values="0.1;0.4;0.1" dur="8s" repeatCount="indefinite" begin="6.5s" />
+      </line>
+      <line x1="1400" y1="0" x2="1400" y2="800" stroke="url(#lineGradient)" stroke-width="0.5">
+        <animate attributeName="opacity" values="0.1;0.4;0.1" dur="8s" repeatCount="indefinite" begin="7s" />
+      </line>
+    </g>
+  </g>
+  
+  <!-- 科技感点阵-脉动效果 -->
+  <g>
+    <circle cx="200" cy="200" r="1.5" fill="white" opacity="0.8">
+      <animate attributeName="opacity" values="0.4;0.9;0.4" dur="4s" repeatCount="indefinite" begin="0s" />
+      <animate attributeName="r" values="1.2;1.8;1.2" dur="4s" repeatCount="indefinite" begin="0s" />
+    </circle>
+    <circle cx="400" cy="150" r="1.5" fill="white" opacity="0.7">
+      <animate attributeName="opacity" values="0.3;0.8;0.3" dur="5s" repeatCount="indefinite" begin="0.5s" />
+      <animate attributeName="r" values="1.2;1.8;1.2" dur="5s" repeatCount="indefinite" begin="0.5s" />
+    </circle>
+    <circle cx="600" cy="300" r="1.5" fill="white" opacity="0.6">
+      <animate attributeName="opacity" values="0.3;0.7;0.3" dur="6s" repeatCount="indefinite" begin="1s" />
+      <animate attributeName="r" values="1.2;1.8;1.2" dur="6s" repeatCount="indefinite" begin="1s" />
+    </circle>
+    <circle cx="800" cy="250" r="1.5" fill="white" opacity="0.9">
+      <animate attributeName="opacity" values="0.5;0.9;0.5" dur="4.5s" repeatCount="indefinite" begin="1.5s" />
+      <animate attributeName="r" values="1.2;1.8;1.2" dur="4.5s" repeatCount="indefinite" begin="1.5s" />
+    </circle>
+    <circle cx="1000" cy="400" r="1.5" fill="white" opacity="0.7">
+      <animate attributeName="opacity" values="0.4;0.8;0.4" dur="5.5s" repeatCount="indefinite" begin="2s" />
+      <animate attributeName="r" values="1.2;1.8;1.2" dur="5.5s" repeatCount="indefinite" begin="2s" />
+    </circle>
+    <circle cx="1200" cy="350" r="1.5" fill="white" opacity="0.8">
+      <animate attributeName="opacity" values="0.4;0.9;0.4" dur="5s" repeatCount="indefinite" begin="2.5s" />
+      <animate attributeName="r" values="1.2;1.8;1.2" dur="5s" repeatCount="indefinite" begin="2.5s" />
+    </circle>
+    <circle cx="300" cy="450" r="1.5" fill="white" opacity="0.7">
+      <animate attributeName="opacity" values="0.4;0.8;0.4" dur="4.5s" repeatCount="indefinite" begin="3s" />
+      <animate attributeName="r" values="1.2;1.8;1.2" dur="4.5s" repeatCount="indefinite" begin="3s" />
+    </circle>
+    <circle cx="500" cy="500" r="1.5" fill="white" opacity="0.9">
+      <animate attributeName="opacity" values="0.5;1;0.5" dur="4s" repeatCount="indefinite" begin="3.5s" />
+      <animate attributeName="r" values="1.2;1.8;1.2" dur="4s" repeatCount="indefinite" begin="3.5s" />
+    </circle>
+    <circle cx="700" cy="550" r="1.5" fill="white" opacity="0.6">
+      <animate attributeName="opacity" values="0.3;0.7;0.3" dur="5s" repeatCount="indefinite" begin="4s" />
+      <animate attributeName="r" values="1.2;1.8;1.2" dur="5s" repeatCount="indefinite" begin="4s" />
+    </circle>
+    <circle cx="900" cy="500" r="1.5" fill="white" opacity="0.8">
+      <animate attributeName="opacity" values="0.4;0.9;0.4" dur="4.5s" repeatCount="indefinite" begin="4.5s" />
+      <animate attributeName="r" values="1.2;1.8;1.2" dur="4.5s" repeatCount="indefinite" begin="4.5s" />
+    </circle>
+    <circle cx="1100" cy="600" r="1.5" fill="white" opacity="0.7">
+      <animate attributeName="opacity" values="0.4;0.8;0.4" dur="5s" repeatCount="indefinite" begin="5s" />
+      <animate attributeName="r" values="1.2;1.8;1.2" dur="5s" repeatCount="indefinite" begin="5s" />
+    </circle>
+    <circle cx="1300" cy="550" r="1.5" fill="white" opacity="0.6">
+      <animate attributeName="opacity" values="0.3;0.7;0.3" dur="5.5s" repeatCount="indefinite" begin="5.5s" />
+      <animate attributeName="r" values="1.2;1.8;1.2" dur="5.5s" repeatCount="indefinite" begin="5.5s" />
+    </circle>
+  </g>
+  
+  <!-- 点缀装饰-动画效果 -->
+  <g opacity="0.6">
+    <!-- 左上角多边形-旋转 -->
+    <polygon points="100,50 150,50 150,100 100,100" fill="url(#polyGradient)" opacity="0.3">
+      <animateTransform attributeName="transform" type="rotate" from="0 125 75" to="360 125 75" dur="30s" repeatCount="indefinite" />
+    </polygon>
+    
+    <!-- 右上角圆环-脉冲效果 -->
+    <circle cx="1300" cy="100" r="40" stroke="#4facfe" stroke-width="1" fill="none" opacity="0.4">
+      <animate attributeName="r" values="35;45;35" dur="10s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="0.2;0.5;0.2" dur="10s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="1300" cy="100" r="35" stroke="#00f2fe" stroke-width="0.5" fill="none" opacity="0.3">
+      <animate attributeName="r" values="30;40;30" dur="10s" repeatCount="indefinite" begin="1s" />
+      <animate attributeName="opacity" values="0.2;0.4;0.2" dur="10s" repeatCount="indefinite" begin="1s" />
+    </circle>
+    
+    <!-- 左下角圆点阵列-闪烁效果 -->
+    <circle cx="100" cy="700" r="3" fill="url(#dotGradient)">
+      <animate attributeName="opacity" values="0.4;1;0.4" dur="5s" repeatCount="indefinite" begin="0s" />
+    </circle>
+    <circle cx="120" cy="720" r="2" fill="url(#dotGradient)">
+      <animate attributeName="opacity" values="0.3;0.8;0.3" dur="5s" repeatCount="indefinite" begin="1s" />
+    </circle>
+    <circle cx="140" cy="690" r="1.5" fill="url(#dotGradient)">
+      <animate attributeName="opacity" values="0.2;0.7;0.2" dur="5s" repeatCount="indefinite" begin="2s" />
+    </circle>
+    <circle cx="80" cy="680" r="2" fill="url(#dotGradient)">
+      <animate attributeName="opacity" values="0.3;0.8;0.3" dur="5s" repeatCount="indefinite" begin="3s" />
+    </circle>
+    
+    <!-- 右下角六边形-呼吸效果 -->
+    <polygon points="1300,700 1330,720 1330,760 1300,780 1270,760 1270,720" 
+             stroke="#4facfe" stroke-width="1" fill="none" opacity="0.4">
+      <animate attributeName="opacity" values="0.2;0.6;0.2" dur="8s" repeatCount="indefinite" />
+      <animateTransform attributeName="transform" type="rotate" from="0 1300 740" to="-360 1300 740" dur="40s" repeatCount="indefinite" />
+    </polygon>
+  </g>
+  
+  <!-- 连接线-数据流动效果 -->
+  <g>
+    <!-- 使用虚线动画模拟数据流，增强可见性 -->
+    <line x1="200" y1="200" x2="400" y2="150" stroke="url(#lineGradient)" stroke-width="1.5" opacity="0.5" filter="url(#glow)">
+      <animate attributeName="stroke-dasharray" values="0,20,0,180;0,30,30,140;0,180,20,0" dur="4s" repeatCount="indefinite" />
+      <animate attributeName="stroke-opacity" values="0.3;0.8;0.3" dur="4s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values="1.5;2;1.5" dur="4s" repeatCount="indefinite" />
+    </line>
+    <line x1="400" y1="150" x2="600" y2="300" stroke="url(#lineGradient)" stroke-width="1.5" opacity="0.5" filter="url(#glow)">
+      <animate attributeName="stroke-dasharray" values="0,40,0,160;0,60,40,100;0,160,40,0" dur="5s" repeatCount="indefinite" begin="0.5s" />
+      <animate attributeName="stroke-opacity" values="0.3;0.8;0.3" dur="5s" repeatCount="indefinite" begin="0.5s" />
+      <animate attributeName="stroke-width" values="1.5;2;1.5" dur="5s" repeatCount="indefinite" begin="0.5s" />
+    </line>
+    <line x1="600" y1="300" x2="800" y2="250" stroke="url(#lineGradient)" stroke-width="1.5" opacity="0.5" filter="url(#glow)">
+      <animate attributeName="stroke-dasharray" values="0,30,0,170;0,50,30,120;0,170,30,0" dur="5s" repeatCount="indefinite" begin="1s" />
+      <animate attributeName="stroke-opacity" values="0.3;0.8;0.3" dur="5s" repeatCount="indefinite" begin="1s" />
+      <animate attributeName="stroke-width" values="1.5;2;1.5" dur="5s" repeatCount="indefinite" begin="1s" />
+    </line>
+    <line x1="800" y1="250" x2="1000" y2="400" stroke="url(#lineGradient)" stroke-width="1.5" opacity="0.5" filter="url(#glow)">
+      <animate attributeName="stroke-dasharray" values="0,20,0,180;0,40,20,140;0,180,20,0" dur="4s" repeatCount="indefinite" begin="1.5s" />
+      <animate attributeName="stroke-opacity" values="0.3;0.8;0.3" dur="4s" repeatCount="indefinite" begin="1.5s" />
+      <animate attributeName="stroke-width" values="1.5;2;1.5" dur="4s" repeatCount="indefinite" begin="1.5s" />
+    </line>
+    <line x1="1000" y1="400" x2="1200" y2="350" stroke="url(#lineGradient)" stroke-width="1.5" opacity="0.5" filter="url(#glow)">
+      <animate attributeName="stroke-dasharray" values="0,30,0,170;0,50,30,120;0,170,30,0" dur="5s" repeatCount="indefinite" begin="2s" />
+      <animate attributeName="stroke-opacity" values="0.3;0.8;0.3" dur="5s" repeatCount="indefinite" begin="2s" />
+      <animate attributeName="stroke-width" values="1.5;2;1.5" dur="5s" repeatCount="indefinite" begin="2s" />
+    </line>
+    <line x1="300" y1="450" x2="500" y2="500" stroke="url(#lineGradient)" stroke-width="1.5" opacity="0.5" filter="url(#glow)">
+      <animate attributeName="stroke-dasharray" values="0,40,0,160;0,60,40,100;0,160,40,0" dur="5s" repeatCount="indefinite" begin="2.5s" />
+      <animate attributeName="stroke-opacity" values="0.3;0.8;0.3" dur="5s" repeatCount="indefinite" begin="2.5s" />
+      <animate attributeName="stroke-width" values="1.5;2;1.5" dur="5s" repeatCount="indefinite" begin="2.5s" />
+    </line>
+    <line x1="500" y1="500" x2="700" y2="550" stroke="url(#lineGradient)" stroke-width="1.5" opacity="0.5" filter="url(#glow)">
+      <animate attributeName="stroke-dasharray" values="0,20,0,180;0,40,20,140;0,180,20,0" dur="5s" repeatCount="indefinite" begin="3s" />
+      <animate attributeName="stroke-opacity" values="0.3;0.8;0.3" dur="5s" repeatCount="indefinite" begin="3s" />
+      <animate attributeName="stroke-width" values="1.5;2;1.5" dur="5s" repeatCount="indefinite" begin="3s" />
+    </line>
+    <line x1="700" y1="550" x2="900" y2="500" stroke="url(#lineGradient)" stroke-width="1.5" opacity="0.5" filter="url(#glow)">
+      <animate attributeName="stroke-dasharray" values="0,30,0,170;0,50,30,120;0,170,30,0" dur="5s" repeatCount="indefinite" begin="3.5s" />
+      <animate attributeName="stroke-opacity" values="0.3;0.8;0.3" dur="5s" repeatCount="indefinite" begin="3.5s" />
+      <animate attributeName="stroke-width" values="1.5;2;1.5" dur="5s" repeatCount="indefinite" begin="3.5s" />
+    </line>
+    <line x1="900" y1="500" x2="1100" y2="600" stroke="url(#lineGradient)" stroke-width="1.5" opacity="0.5" filter="url(#glow)">
+      <animate attributeName="stroke-dasharray" values="0,40,0,160;0,60,40,100;0,160,40,0" dur="5s" repeatCount="indefinite" begin="4s" />
+      <animate attributeName="stroke-opacity" values="0.3;0.8;0.3" dur="5s" repeatCount="indefinite" begin="4s" />
+      <animate attributeName="stroke-width" values="1.5;2;1.5" dur="5s" repeatCount="indefinite" begin="4s" />
+    </line>
+    <line x1="1100" y1="600" x2="1300" y2="550" stroke="url(#lineGradient)" stroke-width="1.5" opacity="0.5" filter="url(#glow)">
+      <animate attributeName="stroke-dasharray" values="0,20,0,180;0,40,20,140;0,180,20,0" dur="5s" repeatCount="indefinite" begin="4.5s" />
+      <animate attributeName="stroke-opacity" values="0.3;0.8;0.3" dur="5s" repeatCount="indefinite" begin="4.5s" />
+      <animate attributeName="stroke-width" values="1.5;2;1.5" dur="5s" repeatCount="indefinite" begin="4.5s" />
+    </line>
+    
+    <!-- 添加更多的连接线，打造更复杂的网络效果 -->
+    <line x1="200" y1="200" x2="300" y2="450" stroke="url(#lineGradient)" stroke-width="1.5" opacity="0.5" filter="url(#glow)">
+      <animate attributeName="stroke-dasharray" values="0,25,0,175;0,45,25,130;0,175,25,0" dur="4.5s" repeatCount="indefinite" begin="1.2s" />
+      <animate attributeName="stroke-opacity" values="0.3;0.8;0.3" dur="4.5s" repeatCount="indefinite" begin="1.2s" />
+      <animate attributeName="stroke-width" values="1.5;2;1.5" dur="4.5s" repeatCount="indefinite" begin="1.2s" />
+    </line>
+    <line x1="400" y1="150" x2="500" y2="500" stroke="url(#lineGradient)" stroke-width="1.5" opacity="0.5" filter="url(#glow)">
+      <animate attributeName="stroke-dasharray" values="0,35,0,165;0,55,35,110;0,165,35,0" dur="5.5s" repeatCount="indefinite" begin="2.2s" />
+      <animate attributeName="stroke-opacity" values="0.3;0.8;0.3" dur="5.5s" repeatCount="indefinite" begin="2.2s" />
+      <animate attributeName="stroke-width" values="1.5;2;1.5" dur="5.5s" repeatCount="indefinite" begin="2.2s" />
+    </line>
+    <line x1="800" y1="250" x2="900" y2="500" stroke="url(#lineGradient)" stroke-width="1.5" opacity="0.5" filter="url(#glow)">
+      <animate attributeName="stroke-dasharray" values="0,30,0,170;0,50,30,120;0,170,30,0" dur="4.8s" repeatCount="indefinite" begin="3.2s" />
+      <animate attributeName="stroke-opacity" values="0.3;0.8;0.3" dur="4.8s" repeatCount="indefinite" begin="3.2s" />
+      <animate attributeName="stroke-width" values="1.5;2;1.5" dur="4.8s" repeatCount="indefinite" begin="3.2s" />
+    </line>
+    <line x1="1000" y1="400" x2="1100" y2="600" stroke="url(#lineGradient)" stroke-width="1.5" opacity="0.5" filter="url(#glow)">
+      <animate attributeName="stroke-dasharray" values="0,25,0,175;0,45,25,130;0,175,25,0" dur="5.2s" repeatCount="indefinite" begin="4.2s" />
+      <animate attributeName="stroke-opacity" values="0.3;0.8;0.3" dur="5.2s" repeatCount="indefinite" begin="4.2s" />
+      <animate attributeName="stroke-width" values="1.5;2;1.5" dur="5.2s" repeatCount="indefinite" begin="4.2s" />
+    </line>
+  </g>
+  
+  <!-- 大型浮动圆-脉冲效果 -->
+  <g>
+    <circle cx="700" cy="400" r="200" fill="none" stroke="url(#lineGradient)" stroke-width="0.8" opacity="0.15" filter="url(#glow)">
+      <animate attributeName="r" values="195;205;195" dur="15s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="0.1;0.2;0.1" dur="15s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="700" cy="400" r="195" fill="none" stroke="url(#lineGradient)" stroke-width="0.6" opacity="0.15" filter="url(#glow)">
+      <animate attributeName="r" values="190;200;190" dur="15s" repeatCount="indefinite" begin="3s" />
+      <animate attributeName="opacity" values="0.1;0.2;0.1" dur="15s" repeatCount="indefinite" begin="3s" />
+    </circle>
+    <circle cx="700" cy="400" r="190" fill="none" stroke="url(#lineGradient)" stroke-width="0.4" opacity="0.15" filter="url(#glow)">
+      <animate attributeName="r" values="185;195;185" dur="15s" repeatCount="indefinite" begin="6s" />
+      <animate attributeName="opacity" values="0.1;0.2;0.1" dur="15s" repeatCount="indefinite" begin="6s" />
+    </circle>
+  </g>
+  
+  <!-- 科技感细节-扫描线动画 -->
+  <g opacity="0.15">
+    <rect x="50" y="200" width="100" height="5" fill="url(#lineGradient)" rx="2" ry="2">
+      <animate attributeName="opacity" values="0.1;0.3;0.1" dur="3s" repeatCount="indefinite" />
+    </rect>
+    <rect x="50" y="210" width="70" height="3" fill="url(#lineGradient)" rx="1.5" ry="1.5">
+      <animate attributeName="opacity" values="0.1;0.3;0.1" dur="3s" repeatCount="indefinite" begin="1s" />
+    </rect>
+    <rect x="50" y="220" width="120" height="2" fill="url(#lineGradient)" rx="1" ry="1">
+      <animate attributeName="opacity" values="0.1;0.3;0.1" dur="3s" repeatCount="indefinite" begin="2s" />
+    </rect>
+    
+    <rect x="1300" y="400" width="100" height="5" fill="url(#lineGradient)" rx="2" ry="2">
+      <animate attributeName="opacity" values="0.1;0.3;0.1" dur="3s" repeatCount="indefinite" begin="0.5s" />
+    </rect>
+    <rect x="1330" y="410" width="70" height="3" fill="url(#lineGradient)" rx="1.5" ry="1.5">
+      <animate attributeName="opacity" values="0.1;0.3;0.1" dur="3s" repeatCount="indefinite" begin="1.5s" />
+    </rect>
+    <rect x="1280" y="420" width="120" height="2" fill="url(#lineGradient)" rx="1" ry="1">
+      <animate attributeName="opacity" values="0.1;0.3;0.1" dur="3s" repeatCount="indefinite" begin="2.5s" />
+    </rect>
+  </g>
+  
+  <!-- 扫描线效果 -->
+  <rect x="0" y="0" width="100%" height="3" fill="url(#flowGradient)" opacity="0.3">
+    <animate attributeName="y" values="0;800;0" dur="15s" repeatCount="indefinite"/>
+  </rect>
+</svg> 

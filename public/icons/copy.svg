@@ -1,0 +1,43 @@
+<svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="copyGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4facfe" />
+      <stop offset="100%" stop-color="#00f2fe" />
+    </linearGradient>
+  </defs>
+  
+  <!-- 前面的文档 -->
+  <rect x="9" y="9" width="11" height="11" rx="2" 
+        fill="none" 
+        stroke="url(#copyGradient)" 
+        stroke-width="1.5" 
+        stroke-linecap="round" 
+        stroke-linejoin="round" />
+  
+  <!-- 后面的文档 -->
+  <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1" 
+        fill="none" 
+        stroke="url(#copyGradient)" 
+        stroke-width="1.5" 
+        stroke-linecap="round" 
+        stroke-linejoin="round" />
+  
+  <!-- 科技感装饰 - 文档内容 -->
+  <line x1="12" y1="12" x2="17" y2="12" 
+        stroke="url(#copyGradient)" 
+        stroke-width="0.75" 
+        stroke-linecap="round" />
+  
+  <line x1="12" y1="15" x2="17" y2="15" 
+        stroke="url(#copyGradient)" 
+        stroke-width="0.75" 
+        stroke-linecap="round" />
+  
+  <line x1="12" y1="18" x2="14" y2="18" 
+        stroke="url(#copyGradient)" 
+        stroke-width="0.75" 
+        stroke-linecap="round" />
+  
+  <!-- 科技点缀 -->
+  <circle cx="17" cy="9" r="0.5" fill="url(#copyGradient)" />
+</svg> 

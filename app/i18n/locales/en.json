@@ -1,0 +1,95 @@
+{
+  "host": {
+    "title": "Host a Screen Sharing Session",
+    "description": "Share your screen with others easily. Just share the room code or link below.",
+    "roomCode": "Room Code",
+    "copyCode": "Copy Code",
+    "codeDescription": "Room code copied to clipboard",
+    "shareableLink": "Shareable Link",
+    "copyLink": "Copy Link",
+    "linkDescription": "Link copied to clipboard",
+    "or": "or",
+    "generatingCode": "Generating code...",
+    "generatingLink": "Generating link...",
+    "currentViewers": "Current Viewers",
+    "stopSharing": "Stop Sharing",
+    "backToHome": "Back to Home",
+    "sessionEnded": "Session Ended",
+    "sessionEndedDescription": "Your screen sharing session has been successfully ended.",
+    "newViewerConnected": "New Viewer Connected",
+    "clickToStartSharing": "Click the button below to start screen sharing.",
+    "startSharing": "Start Sharing",
+    "sharingError": "Screen Sharing Error",
+    "sharingErrorDescription": "Failed to start screen sharing. Please make sure you have granted permission.",
+    "scanToJoin": "Scan QR code to join this session",
+    "generating": "Generating",
+    "downloadQR": "Download QR Code"
+  },
+  "join": {
+    "title": "Join a Screen Sharing Session",
+    "description": "Enter the room code provided by the host to join their screen sharing session.",
+    "roomInputLabel": "Room Code",
+    "roomInputPlaceholder": "Enter room code...",
+    "joinButton": "Join Room",
+    "or": "or",
+    "backToHome": "Back to Home",
+    "connecting": "Connecting...",
+    "waitingForHost": "Connected! Waiting for host to share their screen...",
+    "connectionError": "Connection Error",
+    "connectionErrorDescription": "Could not connect to the room. Please check the code and try again.",
+    "leaveRoom": "Leave Room"
+  },
+  "home": {
+    "title": "Share Your Screen Instantly",
+    "description": "A simple way to share your screen with anyone. No signups, no downloads, just instant screen sharing.",
+    "hostButton": "Host a Session",
+    "joinButton": "Join a Session",
+    "features": {
+      "title": "Features",
+      "items": [
+        {
+          "title": "Simple Sharing",
+          "description": "Share your screen with just a unique code - no accounts needed."
+        },
+        {
+          "title": "Real-time Streaming",
+          "description": "Low-latency, high-quality screen sharing using WebRTC technology."
+        },
+        {
+          "title": "Cross-browser Support",
+          "description": "Works on all major browsers with no plugins or extensions required."
+        },
+        {
+          "title": "Audio Support",
+          "description": "Share system audio (Chrome & Edge) along with your screen."
+        }
+      ]
+    },
+    "howItWorks": {
+      "title": "How It Works",
+      "host": {
+        "title": "For Hosts",
+        "steps": [
+          "Click 'Host a Session'",
+          "Share the generated room code with viewers",
+          "Grant screen sharing permissions when prompted",
+          "Start sharing your screen"
+        ]
+      },
+      "viewer": {
+        "title": "For Viewers",
+        "steps": [
+          "Click 'Join a Session'",
+          "Enter the room code shared by the host",
+          "Wait for the host to start sharing",
+          "View the shared screen in real-time"
+        ]
+      }
+    }
+  },
+  "navigation": {
+    "host": "Host",
+    "join": "Join",
+    "language": "Language"
+  }
+} 

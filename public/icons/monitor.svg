@@ -1,0 +1,40 @@
+<svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="monitorGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4facfe" />
+      <stop offset="100%" stop-color="#00f2fe" />
+    </linearGradient>
+  </defs>
+  
+  <!-- 显示器外壳 -->
+  <rect x="2" y="3" width="20" height="14" rx="2" 
+        fill="none" 
+        stroke="url(#monitorGradient)" 
+        stroke-width="1.5" 
+        stroke-linecap="round" 
+        stroke-linejoin="round" />
+  
+  <!-- 显示器底座 -->
+  <path d="M8 21h8M12 17v4" 
+        stroke="url(#monitorGradient)" 
+        stroke-width="1.5" 
+        stroke-linecap="round" 
+        stroke-linejoin="round" />
+  
+  <!-- 屏幕内容 - 小窝图案 -->
+  <path d="M12 7l-4 3v4h8v-4l-4-3z" 
+        fill="none" 
+        stroke="url(#monitorGradient)" 
+        stroke-width="0.75" 
+        stroke-linecap="round" 
+        stroke-linejoin="round" 
+        opacity="0.8" />
+  
+  <!-- 门 -->
+  <rect x="11.25" y="11" width="1.5" height="2" rx="0.5" fill="url(#monitorGradient)" opacity="0.8" />
+  
+  <!-- 科技细节 -->
+  <circle cx="6" cy="5" r="0.5" fill="url(#monitorGradient)" />
+  <circle cx="18" cy="5" r="0.5" fill="url(#monitorGradient)" />
+  <line x1="4" y1="16" x2="20" y2="16" stroke="url(#monitorGradient)" stroke-width="0.5" stroke-opacity="0.5" />
+</svg> 

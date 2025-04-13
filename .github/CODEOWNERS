@@ -1,0 +1,17 @@
+# This file defines the code owners for the repository
+# Each line is a file pattern followed by one or more owners
+
+# 默认所有者
+* @tonghohin
+
+# 特定目录的所有者
+/app/ @tonghohin
+/components/ @tonghohin 
+/public/ @tonghohin
+/lib/ @tonghohin
+/hooks/ @tonghohin
+
+# CI/CD 相关文件的所有者
+/.github/ @tonghohin
+/Dockerfile @tonghohin
+/docker-compose.yaml @tonghohin 
