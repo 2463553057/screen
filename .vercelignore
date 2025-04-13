@@ -1,3 +1,14 @@
-README.md
 .git
-node_modules 
+.husky
+.github
+node_modules
+.next
+README.md
+CONTRIBUTING.md
+debug.js
+docker-compose.yaml
+Dockerfile
+.eslintrc.json
+.prettierrc
+.prettierignore
+.lintstagedrc 
