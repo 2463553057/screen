@@ -31,7 +31,7 @@
         "peerjs": "^1.5.2",
         "pixi.js": "^7.3.2",
         "qrcode.react": "^4.2.0",
-        "react": "19.0.0-rc-66855b96-20241106",
+        "react": "19.1.0",
         "react-dom": "19.0.0-rc-66855b96-20241106",
         "tailwind-merge": "^2.5.2",
         "tailwindcss-animate": "^1.0.7"
